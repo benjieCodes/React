@@ -1,18 +1,18 @@
 import React from 'react';
 
+import { Form } from './form';
+
 class App extends React.Component {
 
   sayHi () {
     event.preventDefault();
-    alert('Hi.');
   }
 
   render () {
     return (
-      <div className="cool">
-        <button onClick={this.sayHi}>
-          Click Me
-        </button>
+      <div className="todo-app">
+      <h2> Benjie's Todo List </h2>
+        <Form />
       </div>
     );
   }
