@@ -5,7 +5,9 @@ class Form extends React.Component {
 
   addTask (event) {
     event.preventDefault();
-    console.log(this.refs.taskInput.value);
+    let name = this.refs.taskInput.value;
+    this.props.createTask(name);
+    this.refs.taskInput.value = '';
   }
 
   render () {
